@@ -1,0 +1,96 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  align-items: center;
+  background: linear-gradient(320deg, #f43ce5, #49b5ee, #64f354, #f3ae55);
+  display: flex;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-display: swap;
+  height: inherit;
+  justify-content: center;
+}
+
+.wrapper {
+  box-shadow: rgba(35, 35, 35, 0.1);
+  color: #232323;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  border-radius: 16px;
+  flex-basis: 400px;
+  height: 540px;
+  padding: 20px 35px;
+}
+
+.screen {
+  box-shadow: rgba(35, 35, 35, 0.1);
+  color: #232323;
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.01);
+  border-radius: 16px;
+  font-size: 35px;
+  overflow: auto;
+  padding: 20px;
+  text-align: right;
+  width: 326px;
+}
+
+.calc-btn-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 0;
+}
+
+.calc-btn {
+  box-shadow: rgba(35, 35, 35, 0.1);
+  color: #232323;
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.01);
+  border-radius: 16px;
+  flex-basis: 20%;
+  font-family: inherit;
+  font-size: 24px;
+  height: 65px;
+}
+
+.calc-btn:last-child{
+    color: #fff;
+    background: #d72880;
+}
+.calc-btn:last-child:hover{
+    background-color: inherit;
+    color:inherit;
+}
+.calc-btn:hover{
+    background-color: inherit;
+    color: inherit;
+}
+.calc-btn:last-child:active{
+    background-color: rgb(223, 124, 240);
+    color: #020202;
+}
+.calc-btn:active{
+    background-color: #eee957;
+}
+
+.double{
+    flex-basis: 47%;
+}
+.tripple{
+    flex-basis: 73%;
+}
